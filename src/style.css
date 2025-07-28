@@ -32,11 +32,42 @@ h1 {
   font-weight: 400;
 }
 
-p {
+h2 {
+  font-size: 3rem;
+  font-family: var(--font-heading);
+  color: var(--color-text);
+  line-height: 120%;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 2rem;
+  font-family: var(--font-heading);
+  color: var(--color-text);
+  line-height: 120%;
+  font-weight: 400;
+}
+
+.regular {
+  font-size: 1rem;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  font-weight: 200;
+  line-height: 150%;
+}
+
+.medium {
   font-size: 1.125rem;
   font-family: var(--font-body);
   color: var(--color-text);
   font-weight: 200;
+}
+
+.tagline {
+  font-size: 1rem;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  font-weight: 400;
 }
 
 .btn {
@@ -50,6 +81,8 @@ nav {
   background-color: var(--color-bg);
   padding: 1rem 4rem;
   font-family: var(--font-body);
+  position: fixed;
+  width: 100%;
 }
 
 .navbar-container  {
@@ -257,4 +290,50 @@ nav {
   .btn {
     font-size: 1.2rem;
   }
+}
+
+/* News */
+
+.news {
+  background-color: var(--color-bg);
+  padding: 7rem 4rem;
+}
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.news-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+  max-width: 768px;
+}
+
+.news-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.column-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.explore-btn {
+  background-color: transparent;
+  color: var(--color-text);
+  font-weight: 200;
 }
