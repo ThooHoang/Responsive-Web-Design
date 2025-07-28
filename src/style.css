@@ -48,6 +48,7 @@ h4 {
   font-weight: 400;
 }
 
+
 .regular {
   font-size: 1rem;
   font-family: var(--font-body);
@@ -67,12 +68,16 @@ h4 {
   font-size: 1rem;
   font-family: var(--font-body);
   color: var(--color-text);
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .btn {
   padding: 8px 20px;
   border-radius: 100px;
+  font-family: var(--font-body);
+}
+.text-bl {
+  color: #030305;
 }
 
 /* Navbar */
@@ -308,6 +313,7 @@ nav {
 }
 
 .news-text {
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -324,6 +330,35 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+
+@media (max-width: 768px) {
+  .news-cards {
+    gap: 2rem;
+  }
+  
+  .column-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 375px) {
+  .news {
+    padding: 4rem 1rem;
+  }
+  
+  .news-cards {
+    gap: 1.5rem;
+    padding: 0;
+  }
+
+  .column-card {
+    padding: 0 1rem;
+  }
 }
 
 .column-card {
@@ -337,3 +372,86 @@ nav {
   color: var(--color-text);
   font-weight: 200;
 }
+
+/* Trust */
+.trust {
+  padding: 7rem 4rem;
+}
+
+.trust-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.trust-container img {
+  width: 100%;
+  object-fit: contain;
+  flex: 1;
+}
+
+.trust-text {
+  flex: 1;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.trust-text__title {
+  gap: 1.125rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.trust-text__content {
+  display: flex;
+  gap: 8px;
+}
+
+.list-item {
+  flex: 1;
+  margin-top: 8px;
+  margin-inline: auto;
+}
+
+.trust-read-btn {
+  background-color: hsla(0, 0%, 0%, 0.055);
+  font-family: var(--font-body);
+  font-weight: 500;
+  color: #030305;
+
+}
+
+.trust-subscribe-btn {
+  color: #030305;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 1110px) {
+  .trust-container {
+    text-align: center;
+  }
+
+  .trust-container .action {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .trust-text__content {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .trust-container img {
+    height: 400px;
+    max-width: 400px;
+  }
+}
+
